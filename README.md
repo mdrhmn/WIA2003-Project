@@ -19,14 +19,14 @@ Ben Sherman is a UK broker who is looking for industrial investment opportunitie
     a.	Guide 1: you can use Python Geocoding Toolbox
     
     b.	Suggestion 2: you should use Google Distance Matrix API
-    
-        i.	Login to the google developer’s website and follow through the examples. It is important that you know how to use     
+        i.	Login to the google developer’s website and follow through the examples. It is important that you know how to use 
             the API key given to you within the code that you are going to use. Refer to this link: 
             https://developers.google.com/maps/documentation/distance-matrix/start
             
 3.	Journey planner: Suggest a journey for Ben to visit each of the cities once with the least distance travelled. 
 
 4.	Plot line between the destinations.
+
     a.	Guide1:  you can use google.maps.Polyline. You can refer to this link:
     https://www.sitepoint.com/create-a-polyline-using-the-geolocation-and-the-google-maps-api/
     
@@ -34,6 +34,7 @@ Ben Sherman is a UK broker who is looking for industrial investment opportunitie
 Ben decided to focus more on the possibilities of better return of investment in cities which has a positive economy and financial growth. So, Ben needs to do some analysis of local economy and finance situation for the last 3 months.
 
 5.	Extract information from major economic/financial news website for each city. You need to find 5 related articles within the last 3 months to be analysed.  
+
     a.	Sometimes a webpage must be converted to the text version before it can be done
         i.	Guide 1: You may refer to this website to extract word from a website
         https://www.textise.net/ 
