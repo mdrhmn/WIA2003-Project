@@ -7,15 +7,19 @@ One of the essences of computer science and information technology is to solve p
 Ben Sherman is a UK broker who is looking for industrial investment opportunities in the cities of Asia. He already invested in a company in Kuala Lumpur and now he plans to travel to several cities in Asia from Kuala Lumpur to expand his investment. The cities include Jakarta, Bangkok, Taipei, Hong Kong, Tokyo, Beijing and Seoul. 
 
 1.	Get and mark locations of the all the cities Ben plan to visit.
+    
     a.	Guide 1: you can use Python Geocoding Toolbox
     Look up: https://pypi.python.org/pypi/geopy#downloads
     
     b.	Guide 2: you can use gmplot
-Lookup: https://github.com/vgm64/gmplot 
+    Look up: https://github.com/vgm64/gmplot 
 
 2.	Get the distances between each of these destinations
+
     a.	Guide 1: you can use Python Geocoding Toolbox
+    
     b.	Suggestion 2: you should use Google Distance Matrix API
+    
         i.	Login to the google developer’s website and follow through the examples. It is important that you know how to use     
             the API key given to you within the code that you are going to use. Refer to this link: 
             https://developers.google.com/maps/documentation/distance-matrix/start
