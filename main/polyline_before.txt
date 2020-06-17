@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Polyline (Before)</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+
+            // Coordinates
+            c_KLIA_KUL = (2.7456, 101.7072) // 0. Kuala Lumpur International Airport, Kuala Lumpur
+            c_SHIA_JAK = (-6.1275, 106.6537) // 1. Soekarno-Hatta International Airport, Jakarta
+            c_SUVA_BKK = (13.6900, 100.7501) // 2. Suvarnabhumi Airport, Bangkok
+            c_CLK_HKG = (22.3080, 113.9185) // 3. Chek Lap Kok International Airport, Hong Kong
+            c_TAO_TPE = (25.0797, 121.2342)  // 4. Taoyuan International Airport, Taipei
+            c_HND_TOK = (35.5494, 139.7798) // 5. Haneda International Airport, Tokyo
+            c_ICN_KOR = (37.4602, 126.4407) // 6. Incheon International Airport, Seoul
+            c_BDA_PEK = (39.5098, 116.4105) // 7. Beijing Daxing International Airport, Beijing
+
+            var travelPath = [
+
+                // Branch 1 (KUL)
+                //  1.	KLIA --> JAK
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(-6.1275, 106.6537)
+                },
+
+                //  2.	KLIA --> BKK
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(13.6900, 100.7501)
+                },
+
+                //  3.	KLIA --> HKG
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(22.3080, 113.9185)
+                },
+
+                //  4.	KLIA --> TPE
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(25.0797, 121.2342)
+                },
+
+                //  5.	KLIA --> TOK
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(35.5494, 139.7798)
+                },
+
+                //  6.	KLIA --> KOR
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(37.4602, 126.4407)
+                },
+
+                //  7.	KLIA --> PEK
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+                // Branch 2 (JAK)
+                //  1.	JAK --> BKK
+                {
+                    start: new google.maps.LatLng(-6.1275, 106.6537),
+                    end: new google.maps.LatLng(13.6900, 100.7501)
+                },
+
+                //  2.	JAK  --> HKG
+                {
+                    start: new google.maps.LatLng(-6.1275, 106.6537),
+                    end: new google.maps.LatLng(22.3080, 113.9185)
+                },
+
+                //  3.	JAK  --> TPE
+                {
+                    start: new google.maps.LatLng(-6.1275, 106.6537),
+                    end: new google.maps.LatLng(25.0797, 121.2342)
+                },
+
+                //  4.	JAK  --> TOK
+                {
+                    start: new google.maps.LatLng(-6.1275, 106.6537),
+                    end: new google.maps.LatLng(35.5494, 139.7798)
+                },
+
+                //  5.	JAK  --> KOR
+                {
+                    start: new google.maps.LatLng(-6.1275, 106.6537),
+                    end: new google.maps.LatLng(37.4602, 126.4407)
+                },
+
+                //  6.	JAK  --> PEK
+                {
+                    start: new google.maps.LatLng(-6.1275, 106.6537),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+                // Branch 3 (BKK)
+                //  1.	BKK  --> HKG
+                {
+                    start: new google.maps.LatLng(13.6900, 100.7501),
+                    end: new google.maps.LatLng(22.3080, 113.9185)
+                },
+
+                //  2.	BKK  --> TPE
+                {
+                    start: new google.maps.LatLng(13.6900, 100.7501),
+                    end: new google.maps.LatLng(25.0797, 121.2342)
+                },
+
+                //  3.	BKK  --> TOK
+                {
+                    start: new google.maps.LatLng(13.6900, 100.7501),
+                    end: new google.maps.LatLng(35.5494, 139.7798)
+                },
+
+                //  4.	BKK  --> KOR
+                {
+                    start: new google.maps.LatLng(13.6900, 100.7501),
+                    end: new google.maps.LatLng(37.4602, 126.4407)
+                },
+
+                //  5.	BKK  --> PEK
+                {
+                    start: new google.maps.LatLng(13.6900, 100.7501),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+                // Branch 4 (HKG)
+                //  1.	HKG  --> TPE
+                {
+                    start: new google.maps.LatLng(22.3080, 113.91851),
+                    end: new google.maps.LatLng(25.0797, 121.2342)
+                },
+
+                //  2.	HKG  --> TOK
+                {
+                    start: new google.maps.LatLng(22.3080, 113.91851),
+                    end: new google.maps.LatLng(35.5494, 139.7798)
+                },
+
+                //  3.	HKG  --> KOR
+                {
+                    start: new google.maps.LatLng(22.3080, 113.91851),
+                    end: new google.maps.LatLng(37.4602, 126.4407)
+                },
+
+                //  4.	HKG  --> PEK
+                {
+                    start: new google.maps.LatLng(22.3080, 113.91851),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+                // Branch 5 (TPE)
+                //  1.	TPE  --> TOK
+                {
+                    start: new google.maps.LatLng(25.0797, 121.2342),
+                    end: new google.maps.LatLng(35.5494, 139.7798)
+                },
+
+                //  2.	TPE  --> KOR
+                {
+                    start: new google.maps.LatLng(25.0797, 121.2342),
+                    end: new google.maps.LatLng(37.4602, 126.4407)
+                },
+
+                //  3.	TPE  --> PEK
+                {
+                    start: new google.maps.LatLng(25.0797, 121.2342),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+                // Branch 6 (TOK)
+                //  1.	TOK  --> KOR
+                {
+                    start: new google.maps.LatLng(35.5494, 139.7798),
+                    end: new google.maps.LatLng(37.4602, 126.4407)
+                },
+
+                //  2.	TOK  --> PEK
+                {
+                    start: new google.maps.LatLng(35.5494, 139.7798),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+                // Branch 7 (KOR)
+                //  1.	TOK  --> PEK
+                {
+                    start: new google.maps.LatLng(37.4602, 126.4407),
+                    end: new google.maps.LatLng(39.5098, 116.4105)
+                },
+
+
+            ];
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: new google.maps.LatLng(25.0797, 121.2342)
+            });
+
+            // Markers for cities
+            for (var i = 0; i < travelPath.length; i++) {
+   
+                new google.maps.Marker({
+                    position: travelPath[i].start,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+            
+                new google.maps.Marker({
+                    position: travelPath[i].end,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+            }
+
+            // Polylines
+            for (var i = 0; i < travelPath.length; i++) {
+
+                var travelLine = new google.maps.Polyline({
+
+                    path: [travelPath[i].start, travelPath[i].end],
+                    geodesic: false,
+                    strokeColor: '#FF0000',
+                    strokeOpacity: 1.0,
+                    strokeWeight: 2
+
+                });
+
+                travelLine.setMap(map);
+            }
+
+        }
+    </script>
+    <script 
+        async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-vXpPlrm2_UBJYLzHznpvc_hhYORT8I&callback=initMap">
+    </script>
+</body>
+
+</html>

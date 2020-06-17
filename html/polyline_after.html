@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Polyline (After)</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+
+            // Coordinates
+            c_KLIA_KUL = (2.7456, 101.7072) // 0. Kuala Lumpur International Airport, Kuala Lumpur
+            c_SHIA_JAK = (-6.1275, 106.6537) // 1. Soekarno-Hatta International Airport, Jakarta
+            c_SUVA_BKK = (13.6900, 100.7501) // 2. Suvarnabhumi Airport, Bangkok
+            c_CLK_HKG = (22.3080, 113.9185) // 3. Chek Lap Kok International Airport, Hong Kong
+            c_TAO_TPE = (25.0797, 121.2342)  // 4. Taoyuan International Airport, Taipei
+            c_HND_TOK = (35.5494, 139.7798) // 5. Haneda International Airport, Tokyo
+            c_ICN_KOR = (37.4602, 126.4407) // 6. Incheon International Airport, Seoul
+            c_BDA_PEK = (39.5098, 116.4105) // 7. Beijing Daxing International Airport, Beijing
+
+            var travelPath = [
+                //  KLIA -> JAK -> HKG -> TPE -> TOK -> KOR -> PEK -> BKK -> KLIA
+                {
+                    start: new google.maps.LatLng(2.7456, 101.7072), // KLIA
+                    pitstop1: new google.maps.LatLng(-6.1275, 106.6537), // JAK
+                    pitstop2: new google.maps.LatLng(22.3080, 113.9185), // HKG
+                    pitstop3: new google.maps.LatLng(25.0797, 121.2342), // TPE
+                    pitstop4: new google.maps.LatLng(35.5494, 139.7798), // TOK
+                    pitstop5: new google.maps.LatLng(37.4602, 126.4407), // KOR
+                    pitstop6: new google.maps.LatLng(39.5098, 116.4105), // PEK
+                    pitstop7: new google.maps.LatLng(13.6900, 100.7501), // BKK
+                    end: new google.maps.LatLng(2.7456, 101.7072) // KLIA
+                }
+
+            ];
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: new google.maps.LatLng(25.0797, 121.2342)
+            });
+
+            // Markers for cities
+            for (var i = 0; i < travelPath.length; i++) {
+   
+                new google.maps.Marker({
+                    position: travelPath[i].start,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop1,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop2,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop3,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop4,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop5,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop6,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+            
+                new google.maps.Marker({
+                    position: travelPath[i].pitstop7,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+
+                new google.maps.Marker({
+                    position: travelPath[i].end,
+                    map: map,
+                    title: "Point" + (i + 1)
+                });
+            }
+            
+            // Polylines
+            for (var i = 0; i < travelPath.length; i++) {
+                var travelLine = new google.maps.Polyline({
+
+                    path: [travelPath[i].start, travelPath[i].pitstop1, travelPath[i].pitstop2, travelPath[i].pitstop3, travelPath[i].pitstop4, 
+                        travelPath[i].pitstop5, travelPath[i].pitstop6, travelPath[i].pitstop7, travelPath[i].end],
+                    geodesic: false,
+                    strokeColor: '#FF0000',
+                    strokeOpacity: 1.0,
+                    strokeWeight: 2
+
+                });
+            }
+
+            travelLine.setMap(map);
+
+        }
+    </script>
+    <script 
+        async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-vXpPlrm2_UBJYLzHznpvc_hhYORT8I&callback=initMap">
+    </script>
+</body>
+
+</html>

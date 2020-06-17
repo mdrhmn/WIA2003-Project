@@ -1,0 +1,310 @@
+PROBLEM 1
+
+BRANCH AND BOUND ALGORITHM:
+Shortest distance    : 13875.44044236057 km
+Shortest path (index): 0 -> 1 -> 3 -> 4 -> 5 -> 6 -> 7 -> 2 -> 0 (and vice versa)
+Shortest path (nodes): KUL -> JAK -> HKG -> TPE -> TOK -> KOR -> PEK -> BKK -> KUL (and vice versa)
+
+VALIDATING SHORTEST DISTANCE AND ROUTE GENERATED:
+GOOGLE'S OR-TOOLS (VALIDATE RESULT):
+Shortest Distance (approximate): 13871 km
+
+Shortest flight routes for KLIA to all cities (node index):
+0 -> 1 -> 3 -> 4 -> 5 -> 6 -> 7 -> 2 -> 0 (and vice versa)
+
+Shortest flight routes for KLIA to all cities (node name):
+KUL -> JAK -> HKG -> TPE -> TOK -> KOR -> PEK -> BKK -> KUL (and vice versa)
+
+PROBLEM 2
+
+STOP WORDS REMOVAL:
+Total word count of jak.txt before stop words removal: 2212
+Total word count of jak.txt after stop words removal: 2212
+
+Total word count of bkk.txt before stop words removal: 3509
+Total word count of bkk.txt after stop words removal: 3509
+
+Total word count of hkg.txt before stop words removal: 4285
+Total word count of hkg.txt after stop words removal: 4285
+
+Total word count of tpe.txt before stop words removal: 3373
+Total word count of tpe.txt after stop words removal: 3373
+
+Total word count of tok.txt before stop words removal: 5176
+Total word count of tok.txt after stop words removal: 5176
+
+Total word count of kor.txt before stop words removal: 3622
+Total word count of kor.txt after stop words removal: 3622
+
+Total word count of pek.txt before stop words removal: 4572
+Total word count of pek.txt after stop words removal: 4572
+
++VE/-VE WORDS ANALYSIS:
+JAK.TXT
+Total number of words in jak.txt: 2212
+
+Number of positive words in jak.txt: 67
+Positive word sets:
+['growth', 'grow', 'grew', 'optimistic', 'sufficient', 'highest', 'higher', 'expanded', 'rise', 'rising', 'high-income', 'easing', 'productive', 'supporting', 'supported', 'equitable', 'maintain', 'stable', 'better', 'advantage']
+Frequency:
+[33, 4, 5, 3, 2, 0, 1, 2, 2, 2, 0, 4, 0, 0, 3, 1, 1, 0, 3, 1]
+
+Number of negative words in jak.txt: 40
+Negative word sets:
+['shave', 'downturn', 'fell', 'slowdown', 'lowest', 'risk', 'fall', 'weakening', 'weaken', 'deficit', 'worsen', 'worst', 'burden', 'stress', 'downfall', 'decline', 'risky', 'risks', 'declining', 'declined']
+Frequency:
+[0, 1, 3, 3, 2, 3, 1, 5, 1, 5, 1, 3, 1, 2, 1, 1, 0, 6, 1, 0]
+
+Percentage of positive words in jak.txt: 3.0289%
+Percentage of negative words in jak.txt: 1.8083%
+
+BKK.TXT
+Total number of words in bkk.txt: 3509
+
+Number of positive words in bkk.txt: 36
+Positive word sets:
+['normal', 'maintain', 'strong', 'plan', 'planspositive', 'increased', 'spike', 'rise', 'sufficient', 'stable', 'reliable', 'manageable', 'surged', 'spiked', 'soared', 'rose', 'relief', 'expand', 'accelerated']
+Frequency:
+[2, 0, 4, 3, 0, 3, 2, 4, 1, 1, 0, 0, 3, 2, 2, 2, 2, 3, 2, 0]
+
+Number of negative words in bkk.txt: 51
+Negative word sets:
+['risks', 'irregularity', 'falling', 'weak', 'weakest', 'damage', 'damaging', 'reeling', 'collapse', 'drop', 'loss', 'losses', 'slowdown', 'risk', 'negative', 'critical', 'slower', 'fell', 'stop', 'fall']
+Frequency:
+[6, 1, 3, 1, 2, 2, 1, 1, 1, 3, 8, 2, 4, 6, 2, 1, 1, 4, 0, 2]
+
+Percentage of positive words in bkk.txt: 1.0259%
+Percentage of negative words in bkk.txt: 1.4534%
+
+HKG.TXT
+Total number of words in hkg.txt: 4285
+
+Number of positive words in hkg.txt: 41
+Positive word sets:
+['rise', 'maintain', 'supporting', 'stability', 'recover', 'bounce', 'restore', 'save', 'fund', 'boost', 'stimulating', 'increase', 'increased', 'rebooting', 'developing', 'develop', 'relieve', 'grow', 'better', 'stimulate']
+Frequency:
+[3, 2, 3, 1, 1, 3, 0, 2, 2, 4, 2, 6, 3, 2, 0, 2, 1, 2, 0, 2]
+
+Number of negative words in hkg.txt: 72
+Negative word sets:
+['deteriorating', 'falling', 'worse', 'weakening', 'slowing', 'unemployment', 'threat', 'deficit', 'risk', 'reduced', 'lower', 'weakening', 'crisis', 'recession', 'downturn', 'unrest', 'fell', 'slowing', 'reeling', 'critical']
+Frequency:
+[2, 2, 2, 2, 2, 6, 2, 13, 7, 3, 4, 0, 2, 8, 4, 8, 3, 0, 1, 1]
+
+Percentage of positive words in hkg.txt: 0.9568%
+Percentage of negative words in hkg.txt: 1.6803%
+
+TPE.TXT
+Total number of words in tpe.txt: 3373
+
+Number of positive words in tpe.txt: 49
+Positive word sets:
+['ramped', 'authorised', 'growing', 'expand', 'increase', 'sufficient', 'secure', 'high', 'shoring', 'stability', 'revive', 'maintaining', 'soared', 'rise', 'rising', 'increased', 'surged', 'strong', 'maintain', 'revised']
+Frequency:
+[1, 0, 2, 4, 10, 1, 2, 4, 2, 2, 1, 1, 1, 4, 1, 2, 1, 6, 3, 1]
+
+Number of negative words in tpe.txt: 65
+Negative word sets:
+['lowered', 'downgrade', 'uncertainty', 'cut', 'crisis', 'canceled', 'fallen', 'losses', 'subsides', 'slow', 'low', 'recession', 'worst', 'interrupt', 'reduced', 'fell', 'dropped', 'plunge', 'lower', 'downgraded']
+Frequency:
+[6, 5, 4, 10, 3, 4, 1, 5, 1, 2, 5, 2, 3, 1, 1, 4, 1, 2, 3, 2]
+
+Percentage of positive words in tpe.txt: 1.4527%
+Percentage of negative words in tpe.txt: 1.9271%
+
+TOK.TXT
+Total number of words in tok.txt: 5176
+
+Number of positive words in tok.txt: 51
+Positive word sets:
+['deploy', 'raising', 'raised', 'raises', 'greater', 'recovering', 'expanded', 'improvement', 'improve', 'expansion', 'expanding', 'forestall', 'funded', 'protected', 'overcome', 'helped', 'upgrades', 'improved', 'recouped', 'recovery']
+Frequency:
+[2, 2, 5, 1, 3, 1, 3, 2, 1, 4, 4, 1, 2, 1, 3, 3, 1, 3, 1, 8]
+
+Number of negative words in tok.txt: 75
+Negative word sets:
+['stagnation', 'crisis', 'stagnate', 'risks', 'recession', 'losses', 'hurt', 'loss', 'cancellation', 'worse', 'risk', 'conflicts', 'worsens', 'delayed', 'negative', 'lower', 'sicker', 'bad', 'drop', 'disruption']
+Frequency:
+[1, 10, 1, 3, 5, 4, 4, 5, 6, 6, 2, 2, 1, 4, 5, 3, 2, 3, 3, 5]
+
+Percentage of positive words in tok.txt: 0.9853%
+Percentage of negative words in tok.txt: 1.4490%
+
+KOR.TXT
+Total number of words in kor.txt: 3622
+
+Number of positive words in kor.txt: 53
+Positive word sets:
+['recovery', 'raise', 'prevention', 'recover', 'rebound', 'improved', 'efforts', 'stronger', 'additional', 'rose', 'expansionary', 'ensure', 'helped', 'stabilization', 'improving', 'expended', 'improvement', 'sufficiently', 'substantial', 'gain']
+Frequency:
+[10, 2, 2, 3, 4, 2, 4, 2, 5, 3, 2, 2, 4, 1, 2, 0, 2, 1, 1, 1]
+
+Number of negative words in kor.txt: 64
+Negative word sets:
+['suffer', 'suffered', 'recession', 'severe', 'setbacks', 'suspended', 'warns', 'delaying', 'delayed', 'shutdowns', 'damage', 'critical', 'fallout', 'dropped', 'problematic', 'crisis', 'negatively', 'hit', 'worse', 'falling']
+Frequency:
+[1, 3, 10, 2, 3, 1, 1, 1, 1, 1, 5, 3, 7, 4, 1, 10, 1, 8, 0, 1]
+
+Percentage of positive words in kor.txt: 1.4633%
+Percentage of negative words in kor.txt: 1.7670%
+
+PEK.TXT
+Total number of words in pek.txt: 4572
+
+Number of positive words in pek.txt: 127
+Positive word sets:
+['growth', 'recovery', 'supporting', 'increasing', 'stabilizing', 'maintained', 'grow', 'grew', 'improvement', 'upwards', 'boost', 'upgraded', 'achieving', 'stability', 'increasing', 'sustainably', 'expand', 'recovery', 'strengthened', 'positively']
+Frequency:
+[68, 10, 1, 5, 2, 0, 6, 9, 1, 1, 5, 1, 5, 8, 0, 1, 2, 0, 1, 1]
+
+Number of negative words in pek.txt: 61
+Negative word sets:
+['decline', 'collapse', 'imbalance', 'dropped', 'fell', 'debt', 'contract', 'drop', 'bottom', 'weak', 'suffered', 'stressed', 'risk', 'scandals', 'degradation', 'tension', 'declines', 'difficult', 'reducing', 'weaker']
+Frequency:
+[9, 3, 0, 3, 9, 6, 2, 3, 2, 5, 1, 1, 5, 1, 1, 3, 1, 1, 3, 2]
+
+Percentage of positive words in pek.txt: 2.7778%
+Percentage of negative words in pek.txt: 1.3342%
+
+SENTIMENT CONCLUSION:
+Concluding sentiments of each cities:
+
+For Jakarta:
+Positive sentiment: 3.0289%     Negative sentiment: 1.8083%
+Since 3.0289% > 1.8083%, Jakarta has positive sentiment.
+
+For Bangkok:
+Positive sentiment: 1.0259%     Negative sentiment: 1.4534%
+Since 1.0259% < 1.4534%, Bangkok has negative sentiment.
+
+For Hong Kong:
+Positive sentiment: 0.9568%     Negative sentiment: 1.6803%
+Since 0.9568% < 1.6803%, Hong Kong has negative sentiment.
+
+For Taipei:
+Positive sentiment: 1.4527%     Negative sentiment: 1.9271%
+Since 1.4527% < 1.9271%, Taipei has negative sentiment.
+
+For Tokyo:
+Positive sentiment: 0.9853%     Negative sentiment: 1.4490%
+Since 0.9853% < 1.4490%, Tokyo has negative sentiment.
+
+For Seoul:
+Positive sentiment: 1.4633%     Negative sentiment: 1.7670%
+Since 1.4633% < 1.7670%, Seoul has negative sentiment.
+
+For Beijing:
+Positive sentiment: 2.7778%     Negative sentiment: 1.3342%
+Since 2.7778% > 1.3342%, Beijing has positive sentiment.
+
+Cities sorted according to sentiments (descending order):
+
+[[3.0289330922242312, 'Jakarta'], [2.7777777777777777, 'Beijing'], [-1.4489953632148378, 'Tokyo'], [-1.4534055286406384, 'Bangkok'], [-1.6802800466744459, 'Hong Kong'], [-1.7669795692987302, 'Seoul'], [-1.9270678920841982, 'Taipei']]
+
+PROBLEM 3
+
+Route (sort by sentiments): ['KUL', 'JAK', 'PEK', 'TOK', 'BKK', 'HKG', 'KOR', 'TPE', 'KUL']
+Route (shortest distance) : ['KUL', 'JAK', 'HKG', 'TPE', 'TOK', 'KOR', 'PEK', 'BKK', 'KUL'] 
+
+GENERATE OPTIMISED ROUTE:
+[JAK vs. JAK]
+
+Optimised:  ['KUL', 'JAK', '', '', '', '', '', '', 'KUL'] 
+
+Next point city: JAK at [0]
+Next city in shortest route: HKG at [1]
+
+[PEK vs. HKG]
+
+CHECKING DISTANCE:
+Distance from JAK to PEK: 5151.5256025977405 km
+Distance from JAK to HKG: 3243.63923826128 km
+Distance difference: 58.81931448576149 > 40% (Rejected)
+
+[TOK vs. HKG]
+
+CHECKING DISTANCE:
+Distance from JAK to TOK: 5770.111908377643 km
+Distance from JAK to HKG: 3243.63923826128 km
+Distance difference: 77.89006373811945 > 40% (Rejected)
+
+[BKK vs. HKG]
+
+CHECKING DISTANCE:
+Distance from JAK to BKK: 2286.676187938444 km
+Distance from JAK to HKG: 3243.63923826128 km
+Distance difference: 29.50275847679677 < 40% (Accepted)
+
+CHECKING SENTIMENT:
+Sentiment for BKK: -1.4534055286406384
+Sentiment for HKG: -1.6802800466744459
+Sentiment difference: 15.60985654471824 > 2% (Accepted)
+
+Optimised:  ['KUL', 'JAK', 'BKK', '', '', '', '', '', 'KUL'] 
+
+Next point city: BKK at [6]
+Next city in shortest route: PEK at [5]
+
+[PEK vs. PEK]
+
+Optimised:  ['KUL', 'JAK', 'BKK', 'PEK', '', '', '', '', 'KUL'] 
+
+Next point city: PEK at [5]
+Next city in shortest route: KOR at [4]
+
+[TOK vs. KOR]
+
+CHECKING DISTANCE:
+Distance from PEK to TOK: 2105.507105484267 km
+Distance from PEK to KOR: 903.6840252123305 km
+Distance difference: 132.99151547904754 > 40% (Rejected)
+
+[HKG vs. KOR]
+
+CHECKING DISTANCE:
+Distance from PEK to HKG: 1921.7845118841735 km
+Distance from PEK to KOR: 903.6840252123305 km
+Distance difference: 112.66111364894704 > 40% (Rejected)
+
+[KOR vs. KOR]
+
+Optimised:  ['KUL', 'JAK', 'BKK', 'PEK', 'KOR', '', '', '', 'KUL'] 
+
+Next point city: KOR at [4]
+Next city in shortest route: TOK at [3]
+
+[TOK vs. TOK]
+
+Optimised:  ['KUL', 'JAK', 'BKK', 'PEK', 'KOR', 'TOK', '', '', 'KUL'] 
+
+Next point city: TOK at [3]
+Next city in shortest route: TPE at [2]
+
+[HKG vs. TPE]
+
+CHECKING DISTANCE:
+Distance from TOK to HKG: 2903.8556027991085 km
+Distance from TOK to TPE: 2122.1914132355682 km
+Distance difference: 36.83287872566534 < 40% (Accepted)
+
+CHECKING SENTIMENT:
+Sentiment for HKG: -1.6802800466744459
+Sentiment for TPE: -1.9270678920841982
+Sentiment difference: 14.687304410844284 > 2% (Accepted)
+
+Optimised:  ['KUL', 'JAK', 'BKK', 'PEK', 'KOR', 'TOK', 'HKG', '', 'KUL'] 
+
+Next point city: HKG at [1]
+Next city in shortest route: TPE at [2]
+
+[TPE vs. TPE]
+
+Optimised:  ['KUL', 'JAK', 'BKK', 'PEK', 'KOR', 'TOK', 'HKG', 'TPE', 'KUL'] 
+
+Next point city: TPE at [2]
+Next city in shortest route: HKG at [1]
+
+All cities have been compared!
+
+Optimised route    : ['KUL', 'JAK', 'BKK', 'PEK', 'KOR', 'TOK', 'HKG', 'TPE', 'KUL']
+Optimised sentiment: ['0', 3.0289330922242312, -1.4534055286406384, 2.7777777777777777, -1.7669795692987302, -1.4489953632148378, -1.6802800466744459, -1.9270678920841982, '0']

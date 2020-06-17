@@ -1,0 +1,679 @@
+################################################ STOP WORDS REMOVAL ################################################
+Total word count of jak.txt before stop words removal: 3858
+Total word count of jak.txt after stop words removal: 2319
+
+Total word count of bkk.txt before stop words removal: 6411
+Total word count of bkk.txt after stop words removal: 3698
+
+Total word count of hkg.txt before stop words removal: 7615
+Total word count of hkg.txt after stop words removal: 4530
+
+Total word count of tpe.txt before stop words removal: 6076
+Total word count of tpe.txt after stop words removal: 3574
+
+Total word count of tok.txt before stop words removal: 9875
+Total word count of tok.txt after stop words removal: 5460
+
+Total word count of kor.txt before stop words removal: 6324
+Total word count of kor.txt after stop words removal: 3786
+
+Total word count of pek.txt before stop words removal: 8453
+Total word count of pek.txt after stop words removal: 4783
+
+################################################ +VE/-VE WORDS ANALYSIS ################################################
+Total word count in jak.txt: 2319
+Total positive word count in jak.txt: 67
+
+List of positive words in jak.txt based on 10 articles:
+
+Word: [growth]         Frequency: 33        
+
+Word: [grow]           Frequency: 4         
+
+Word: [grew]           Frequency: 5         
+
+Word: [optimistic]     Frequency: 3         
+
+Word: [sufficient]     Frequency: 2         
+
+Word: [highest]        Frequency: 0         
+
+Word: [higher]         Frequency: 1         
+
+Word: [expanded]       Frequency: 2         
+
+Word: [rise]           Frequency: 2         
+
+Word: [rising]         Frequency: 2         
+
+Word: [high-income]    Frequency: 0         
+
+Word: [easing]         Frequency: 4         
+
+Word: [growth]         Frequency: 0         
+
+Word: [supporting]     Frequency: 0         
+
+Word: [supported]      Frequency: 3         
+
+Word: [equitable]      Frequency: 1         
+
+Word: [maintain]       Frequency: 1         
+
+Word: [sufficient]     Frequency: 0         
+
+Word: [better]         Frequency: 3         
+
+Word: [advantage]      Frequency: 1         
+
+Total negative word count in jak.txt: 40
+
+List of negative words in jak.txt based on 10 articles:
+
+Word: [shave]          Frequency: 0         
+
+Word: [downturn]       Frequency: 1         
+
+Word: [fell]           Frequency: 3         
+
+Word: [slowdown]       Frequency: 3         
+
+Word: [lowest]         Frequency: 2         
+
+Word: [risk]           Frequency: 3         
+
+Word: [fall]           Frequency: 1         
+
+Word: [weakening]      Frequency: 5         
+
+Word: [weaken]         Frequency: 1         
+
+Word: [deficit]        Frequency: 5         
+
+Word: [worsen]         Frequency: 1         
+
+Word: [worst]          Frequency: 3         
+
+Word: [burden]         Frequency: 1         
+
+Word: [stress]         Frequency: 2         
+
+Word: [downfall]       Frequency: 1         
+
+Word: [decline]        Frequency: 1         
+
+Word: [risk]           Frequency: 0         
+
+Word: [risks]          Frequency: 6         
+
+Word: [declining]      Frequency: 1         
+
+Word: [decline]        Frequency: 0         
+
+---------------------------------------------------------------------------------------------------------------------
+Total word count in bkk.txt: 3698
+Total positive word count in bkk.txt: 36
+
+List of positive words in bkk.txt based on 10 articles:
+
+Word: [normal]         Frequency: 2         
+
+Word: [maintain]       Frequency: 0         
+
+Word: [strong]         Frequency: 4         
+
+Word: [plan]           Frequency: 3         
+
+Word: [planspositive]  Frequency: 0         
+
+Word: [increased]      Frequency: 3         
+
+Word: [spike]          Frequency: 2         
+
+Word: [rise]           Frequency: 4         
+
+Word: [sufficient]     Frequency: 1         
+
+Word: [stable]         Frequency: 1         
+
+Word: [reliable]       Frequency: 0         
+
+Word: [manageable]     Frequency: 0         
+
+Word: [surged]         Frequency: 3         
+
+Word: [spiked]         Frequency: 2         
+
+Word: [soared]         Frequency: 2         
+
+Word: [rose]           Frequency: 2         
+
+Word: [relief]         Frequency: 2         
+
+Word: [expand]         Frequency: 3         
+
+Word: [accelerated]    Frequency: 2         
+
+Total negative word count in bkk.txt: 51
+
+List of negative words in bkk.txt based on 10 articles:
+
+Word: [risks]          Frequency: 6         
+
+Word: [irregularity]   Frequency: 1         
+
+Word: [falling]        Frequency: 3         
+
+Word: [weak]           Frequency: 1         
+
+Word: [weakest]        Frequency: 2         
+
+Word: [damage]         Frequency: 2         
+
+Word: [damaging]       Frequency: 1         
+
+Word: [reeling]        Frequency: 1         
+
+Word: [collapse]       Frequency: 1         
+
+Word: [drop]           Frequency: 3         
+
+Word: [loss]           Frequency: 8         
+
+Word: [losses]         Frequency: 2         
+
+Word: [slowdown]       Frequency: 4         
+
+Word: [risk]           Frequency: 6         
+
+Word: [negative]       Frequency: 2         
+
+Word: [critical]       Frequency: 1         
+
+Word: [slower]         Frequency: 1         
+
+Word: [fell]           Frequency: 4         
+
+Word: [stop]           Frequency: 0         
+
+Word: [fall]           Frequency: 2         
+
+---------------------------------------------------------------------------------------------------------------------
+Total word count in hkg.txt: 4530
+Total positive word count in hkg.txt: 41
+
+List of positive words in hkg.txt based on 10 articles:
+
+Word: [rise]           Frequency: 3         
+
+Word: [maintain]       Frequency: 2         
+
+Word: [supporting]     Frequency: 3         
+
+Word: [stability]      Frequency: 1         
+
+Word: [recover]        Frequency: 1         
+
+Word: [bounce]         Frequency: 3         
+
+Word: [restore]        Frequency: 0         
+
+Word: [save]           Frequency: 2         
+
+Word: [fund]           Frequency: 2         
+
+Word: [boost]          Frequency: 4         
+
+Word: [stimulating]    Frequency: 2         
+
+Word: [increase]       Frequency: 6         
+
+Word: [increased]      Frequency: 3         
+
+Word: [rebooting]      Frequency: 2         
+
+Word: [developing]     Frequency: 0         
+
+Word: [develop]        Frequency: 2         
+
+Word: [relieve]        Frequency: 1         
+
+Word: [grow]           Frequency: 2         
+
+Word: [better]         Frequency: 0         
+
+Word: [stimulate]      Frequency: 2         
+
+Total negative word count in hkg.txt: 72
+
+List of negative words in hkg.txt based on 10 articles:
+
+Word: [deteriorating]  Frequency: 2         
+
+Word: [falling]        Frequency: 2         
+
+Word: [worse]          Frequency: 2         
+
+Word: [weakening]      Frequency: 2         
+
+Word: [slowing]        Frequency: 2         
+
+Word: [unemployment]   Frequency: 6         
+
+Word: [threat]         Frequency: 2         
+
+Word: [deficit]        Frequency: 13        
+
+Word: [risk]           Frequency: 7         
+
+Word: [reduced]        Frequency: 3         
+
+Word: [lower]          Frequency: 4         
+
+Word: [weakening]      Frequency: 0         
+
+Word: [crisis]         Frequency: 2         
+
+Word: [recession]      Frequency: 8         
+
+Word: [downturn]       Frequency: 4         
+
+Word: [unrest]         Frequency: 8         
+
+Word: [fell]           Frequency: 3         
+
+Word: [slowing]        Frequency: 0         
+
+Word: [reeling]        Frequency: 1         
+
+Word: [critical]       Frequency: 1         
+
+---------------------------------------------------------------------------------------------------------------------
+Total word count in tpe.txt: 3574
+Total positive word count in tpe.txt: 49
+
+List of positive words in tpe.txt based on 10 articles:
+
+Word: [ramped]         Frequency: 1         
+
+Word: [authorised]     Frequency: 0         
+
+Word: [growing]        Frequency: 2         
+
+Word: [expand]         Frequency: 4         
+
+Word: [increase]       Frequency: 10        
+
+Word: [sufficient]     Frequency: 1         
+
+Word: [secure]         Frequency: 2         
+
+Word: [high]           Frequency: 4         
+
+Word: [shoring]        Frequency: 2         
+
+Word: [stability]      Frequency: 2         
+
+Word: [revive]         Frequency: 1         
+
+Word: [maintaining]    Frequency: 1         
+
+Word: [soared]         Frequency: 1         
+
+Word: [rise]           Frequency: 4         
+
+Word: [rising]         Frequency: 1         
+
+Word: [increased]      Frequency: 2         
+
+Word: [surged]         Frequency: 1         
+
+Word: [strong]         Frequency: 6         
+
+Word: [maintain]       Frequency: 3         
+
+Word: [revised]        Frequency: 1         
+
+Total negative word count in tpe.txt: 65
+
+List of negative words in tpe.txt based on 10 articles:
+
+Word: [lowered]        Frequency: 6         
+
+Word: [downgrade]      Frequency: 5         
+
+Word: [uncertainty]    Frequency: 4         
+
+Word: [cut]            Frequency: 10        
+
+Word: [crisis]         Frequency: 3         
+
+Word: [canceled]       Frequency: 4         
+
+Word: [fallen]         Frequency: 1         
+
+Word: [losses]         Frequency: 5         
+
+Word: [subsides]       Frequency: 1         
+
+Word: [slow]           Frequency: 2         
+
+Word: [low]            Frequency: 5         
+
+Word: [recession]      Frequency: 2         
+
+Word: [worst]          Frequency: 3         
+
+Word: [interrupt]      Frequency: 1         
+
+Word: [reduced]        Frequency: 1         
+
+Word: [fell]           Frequency: 4         
+
+Word: [dropped]        Frequency: 1         
+
+Word: [plunge]         Frequency: 2         
+
+Word: [lower]          Frequency: 3         
+
+Word: [downgraded]     Frequency: 2         
+
+---------------------------------------------------------------------------------------------------------------------
+Total word count in tok.txt: 5460
+Total positive word count in tok.txt: 51
+
+List of positive words in tok.txt based on 10 articles:
+
+Word: [deploy]         Frequency: 2         
+
+Word: [raising]        Frequency: 2         
+
+Word: [raised]         Frequency: 5         
+
+Word: [raises]         Frequency: 1         
+
+Word: [greater]        Frequency: 3         
+
+Word: [recovering]     Frequency: 1         
+
+Word: [expanded]       Frequency: 3         
+
+Word: [improvement]    Frequency: 2         
+
+Word: [improve]        Frequency: 1         
+
+Word: [expansion]      Frequency: 4         
+
+Word: [expanding]      Frequency: 4         
+
+Word: [forestall]      Frequency: 1         
+
+Word: [funded]         Frequency: 2         
+
+Word: [protected]      Frequency: 1         
+
+Word: [overcome]       Frequency: 3         
+
+Word: [helped]         Frequency: 3         
+
+Word: [upgrades]       Frequency: 1         
+
+Word: [improved]       Frequency: 3         
+
+Word: [recouped]       Frequency: 1         
+
+Word: [recovery]       Frequency: 8         
+
+Total negative word count in tok.txt: 75
+
+List of negative words in tok.txt based on 10 articles:
+
+Word: [stagnation]     Frequency: 1         
+
+Word: [crisis]         Frequency: 10        
+
+Word: [stagnate]       Frequency: 1         
+
+Word: [risks]          Frequency: 3         
+
+Word: [recession]      Frequency: 5         
+
+Word: [losses]         Frequency: 4         
+
+Word: [hurt]           Frequency: 4         
+
+Word: [loss]           Frequency: 5         
+
+Word: [cancellation]   Frequency: 6         
+
+Word: [worse]          Frequency: 6         
+
+Word: [risk]           Frequency: 2         
+
+Word: [conflicts]      Frequency: 2         
+
+Word: [worsens]        Frequency: 1         
+
+Word: [delayed]        Frequency: 4         
+
+Word: [negative]       Frequency: 5         
+
+Word: [lower]          Frequency: 3         
+
+Word: [sicker]         Frequency: 2         
+
+Word: [bad]            Frequency: 3         
+
+Word: [drop]           Frequency: 3         
+
+Word: [disruption]     Frequency: 5         
+
+---------------------------------------------------------------------------------------------------------------------
+Total word count in kor.txt: 3786
+Total positive word count in kor.txt: 53
+
+List of positive words in kor.txt based on 10 articles:
+
+Word: [recovery]       Frequency: 10        
+
+Word: [raise]          Frequency: 2         
+
+Word: [prevention]     Frequency: 2         
+
+Word: [recover]        Frequency: 3         
+
+Word: [rebound]        Frequency: 4         
+
+Word: [improved]       Frequency: 2         
+
+Word: [efforts]        Frequency: 4         
+
+Word: [stronger]       Frequency: 2         
+
+Word: [additional]     Frequency: 5         
+
+Word: [rose]           Frequency: 3         
+
+Word: [expansionary]   Frequency: 2         
+
+Word: [ensure]         Frequency: 2         
+
+Word: [helped]         Frequency: 4         
+
+Word: [stabilization]  Frequency: 1         
+
+Word: [improving]      Frequency: 2         
+
+Word: [expended]       Frequency: 0         
+
+Word: [improvement]    Frequency: 2         
+
+Word: [sufficiently]   Frequency: 1         
+
+Word: [substantial]    Frequency: 1         
+
+Word: [gain]           Frequency: 1         
+
+Total negative word count in kor.txt: 64
+
+List of negative words in kor.txt based on 10 articles:
+
+Word: [suffer]         Frequency: 1         
+
+Word: [suffered]       Frequency: 3         
+
+Word: [recession]      Frequency: 10        
+
+Word: [severe]         Frequency: 2         
+
+Word: [setbacks]       Frequency: 3         
+
+Word: [suspended]      Frequency: 1         
+
+Word: [warns]          Frequency: 1         
+
+Word: [delaying]       Frequency: 1         
+
+Word: [delayed]        Frequency: 1         
+
+Word: [shutdowns]      Frequency: 1         
+
+Word: [damage]         Frequency: 5         
+
+Word: [critical]       Frequency: 3         
+
+Word: [fallout]        Frequency: 7         
+
+Word: [dropped]        Frequency: 4         
+
+Word: [problematic]    Frequency: 1         
+
+Word: [crisis]         Frequency: 10        
+
+Word: [negatively]     Frequency: 1         
+
+Word: [hit]            Frequency: 8         
+
+Word: [worse]          Frequency: 0         
+
+Word: [falling]        Frequency: 1         
+
+---------------------------------------------------------------------------------------------------------------------
+Total word count in pek.txt: 4783
+Total positive word count in pek.txt: 127
+
+List of positive words in pek.txt based on 10 articles:
+
+Word: [growth]         Frequency: 68        
+
+Word: [recovery]       Frequency: 10        
+
+Word: [supporting]     Frequency: 1         
+
+Word: [increasing]     Frequency: 5         
+
+Word: [stabilizing]    Frequency: 2         
+
+Word: [maintained]     Frequency: 0         
+
+Word: [grow]           Frequency: 6         
+
+Word: [grew]           Frequency: 9         
+
+Word: [improvement]    Frequency: 1         
+
+Word: [upwards]        Frequency: 1         
+
+Word: [boost]          Frequency: 5         
+
+Word: [upgraded]       Frequency: 1         
+
+Word: [achieving]      Frequency: 5         
+
+Word: [stability]      Frequency: 8         
+
+Word: [increasing]     Frequency: 0         
+
+Word: [sustainably]    Frequency: 1         
+
+Word: [expand]         Frequency: 2         
+
+Word: [recovery]       Frequency: 0         
+
+Word: [strengthened]   Frequency: 1         
+
+Word: [positively]     Frequency: 1         
+
+Total negative word count in pek.txt: 61
+
+List of negative words in pek.txt based on 10 articles:
+
+Word: [decline]        Frequency: 9         
+
+Word: [collapse]       Frequency: 3         
+
+Word: [imbalance]      Frequency: 0         
+
+Word: [dropped]        Frequency: 3         
+
+Word: [fell]           Frequency: 9         
+
+Word: [debt]           Frequency: 6         
+
+Word: [contract]       Frequency: 2         
+
+Word: [drop]           Frequency: 3         
+
+Word: [bottom]         Frequency: 2         
+
+Word: [weak]           Frequency: 5         
+
+Word: [suffered]       Frequency: 1         
+
+Word: [stressed]       Frequency: 1         
+
+Word: [risk]           Frequency: 5         
+
+Word: [scandals]       Frequency: 1         
+
+Word: [degradation]    Frequency: 1         
+
+Word: [tension]        Frequency: 3         
+
+Word: [declines]       Frequency: 1         
+
+Word: [difficult]      Frequency: 1         
+
+Word: [reducing]       Frequency: 3         
+
+Word: [weaker]         Frequency: 2         
+
+---------------------------------------------------------------------------------------------------------------------
+Polarity of different cities:
+
+Polarity of Jakarta: 1
+Polarity of Bangkok: -1
+Polarity of Hong Kong: -1
+Polarity of Taipei: -1
+Polarity of Tokyo: -1
+Polarity of Seoul: -1
+Polarity of Beijing: 1
+
+################################################# SENTIMENT ANALYSIS #################################################
+
+Total distance of Jakarta: 10451.58616005862
+
+Total distance of Bangkok: 7678.317768022352
+
+Total distance of Hong Kong: 8273.121049513155
+
+Total distance of Taipei: 10330.911169228122
+
+Total distance of Tokyo: 18607.202414298332
+
+Total distance of Seoul: 15572.960467037949
+
+Total distance of Beijing: 14655.109156980283
+
+The best path among all routes in descending order (after taking sentiment analysis into consideration):
+[[0.05006697548001614, 'Jakarta'], [0.050047764912052296, 'Beijing'], [-0.0499088341976526, 'Bangkok'], [-0.04991538864283374, 'Hong Kong'], [-0.04993224218188178, 'Taipei'], [-0.04995505029364958, 'Seoul'], [-0.04996238015880011, 'Tokyo']]
