@@ -9,6 +9,7 @@ Ben Sherman is a UK broker who is looking for industrial investment opportunitie
 1.	Get and mark locations of the all the cities Ben plan to visit.
     a.	Guide 1: you can use Python Geocoding Toolbox
     Look up: https://pypi.python.org/pypi/geopy#downloads
+    
     b.	Guide 2: you can use gmplot
 Lookup: https://github.com/vgm64/gmplot 
 
