@@ -3,7 +3,6 @@ from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 from operator import itemgetter, attrgetter
 from collections import deque, namedtuple
-from pytsp.constants import Constants
 from geopy.distance import geodesic
 import matplotlib.pyplot as plt
 import numpy as np
@@ -50,7 +49,7 @@ gmap3.scatter(latitude_list, longitude_list, '#FF0000',
               size=100, marker=True)
 
 gmap3.draw(
-    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/html/map_markers.html")
+    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/html/map_markers.html")
 
 
 # PROBLEM 1.2:  Get the distances between these destinations. ---------------------------------------------------------------------------------------------------
@@ -78,7 +77,7 @@ def calc_distances(filename):
     file1.close()
 
 
-arg = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/test/input.txt"
+arg = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/dist_matrix/input.txt"
 calc_distances(arg)
 
 # PROBLEM 1.3: Suggest a journey for Ben to visit each of the cities once with the least distance travelled. ----------------------------------------------------
@@ -244,7 +243,7 @@ def read_distances(filename):
 N = 8
 
 cities_list = ["KUL", "JAK", "BKK", "HKG", "TPE", "TOK", "KOR", "PEK"]
-text_directory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/test/input.txt"
+text_directory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/dist_matrix/input.txt"
 
 # Read distance matrix from text file
 dists = read_distances(text_directory)
@@ -314,7 +313,8 @@ def create_data_model():
     # Stores the data for the problem.
     data = {}
 
-    data['distance_matrix'] = [[0, (geodesic(c_KLIA_KUL, c_SHIA_JAK).km), (geodesic(c_KLIA_KUL, c_SUVA_BKK).km), (geodesic(c_KLIA_KUL, c_CLK_HKG).km), (geodesic(c_KLIA_KUL, c_TAO_TPE).km), (geodesic(c_KLIA_KUL, c_HND_TOK).km), (geodesic(c_KLIA_KUL, c_ICN_KOR).km), (geodesic(c_KLIA_KUL, c_BDA_PEK).km)],  # Kuala Lumpur International Airport, Kuala Lumpur
+    data['distance_matrix'] = [[0, (geodesic(c_KLIA_KUL, c_SHIA_JAK).km), (geodesic(c_KLIA_KUL, c_SUVA_BKK).km), (geodesic(c_KLIA_KUL, c_CLK_HKG).km), (geodesic(c_KLIA_KUL, c_TAO_TPE).km), (geodesic(
+                                c_KLIA_KUL, c_HND_TOK).km), (geodesic(c_KLIA_KUL, c_ICN_KOR).km), (geodesic(c_KLIA_KUL, c_BDA_PEK).km)],  # Kuala Lumpur International Airport, Kuala Lumpur
                                [(geodesic(c_KLIA_KUL, c_SHIA_JAK).km), 0, (geodesic(c_SHIA_JAK, c_SUVA_BKK).km), (geodesic(c_SHIA_JAK, c_CLK_HKG).km), (geodesic(c_SHIA_JAK, c_TAO_TPE).km), (geodesic(
                                    c_SHIA_JAK, c_HND_TOK).km), (geodesic(c_SHIA_JAK, c_ICN_KOR).km), (geodesic(c_SHIA_JAK, c_BDA_PEK).km)],  # Soekarno-Hatta International Airport, Jakarta
                                [(geodesic(c_KLIA_KUL, c_SUVA_BKK).km), (geodesic(c_SHIA_JAK, c_SUVA_BKK).km), 0, (geodesic(c_SUVA_BKK, c_CLK_HKG).km), (geodesic(c_SUVA_BKK, c_TAO_TPE).km), (geodesic(
@@ -327,7 +327,8 @@ def create_data_model():
                                    c_TAO_TPE, c_HND_TOK).km), 0, (geodesic(c_HND_TOK, c_ICN_KOR).km), (geodesic(c_HND_TOK, c_BDA_PEK).km)],  # Haneda International Airport, Tokyo
                                [(geodesic(c_KLIA_KUL, c_ICN_KOR).km), (geodesic(c_SHIA_JAK, c_ICN_KOR).km), (geodesic(c_SUVA_BKK, c_ICN_KOR).km), (geodesic(c_CLK_HKG, c_ICN_KOR).km), (geodesic(
                                    c_TAO_TPE, c_ICN_KOR).km), (geodesic(c_HND_TOK, c_ICN_KOR).km), 0, (geodesic(c_ICN_KOR, c_BDA_PEK).km)],  # Incheon International Airport, Seoul
-                               [(geodesic(c_KLIA_KUL, c_BDA_PEK).km), (geodesic(c_SHIA_JAK, c_BDA_PEK).km), (geodesic(c_SUVA_BKK, c_BDA_PEK).km), (geodesic(c_CLK_HKG, c_BDA_PEK).km), (geodesic(c_TAO_TPE, c_BDA_PEK).km), (geodesic(c_HND_TOK, c_BDA_PEK).km), (geodesic(c_ICN_KOR, c_BDA_PEK).km), 0]]  # Beijing Daxing International Airport, Beijing
+                               [(geodesic(c_KLIA_KUL, c_BDA_PEK).km), (geodesic(c_SHIA_JAK, c_BDA_PEK).km), (geodesic(c_SUVA_BKK, c_BDA_PEK).km), (geodesic(c_CLK_HKG, c_BDA_PEK).km), (geodesic(
+                                c_TAO_TPE, c_BDA_PEK).km), (geodesic(c_HND_TOK, c_BDA_PEK).km), (geodesic(c_ICN_KOR, c_BDA_PEK).km), 0]]  # Beijing Daxing International Airport, Beijing
 
     data['num_vehicles'] = 1
     data['depot'] = 0
@@ -437,7 +438,7 @@ for i in range(8):  # n^2
             gmap3.plot(lat, lon, 'red', edge_width=2)
 
 gmap3.draw(
-    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/html/map_before.html")
+    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/html/map_before.html")
 
 # Plot line (After)
 latitude_list = [2.7456, -6.1275, 22.3080, 25.0797,
@@ -451,18 +452,19 @@ gmap2 = gmplot.GoogleMapPlotter(
 gmap2.scatter(latitude_list, longitude_list, '#FF0000', size=100, marker=True)
 gmap2.plot(latitude_list, longitude_list, 'red', edge_width=2.5)
 
-gmap3.draw(
-    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/html/map_after.html")
+gmap2.draw(
+    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/html/map_after.html")
 
 ########################################################################### PROBLEM 2 ###########################################################################
 print("PROBLEM 2\n")
 
 # PROBLEM 2.5: Filter stops words from the text you found ----------------------------------------------------------------------------------
 
-directory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/textfiles/"
+directory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/cities_articles/"
 filesArr = ["jak.txt", "bkk.txt", "hkg.txt",
             "tpe.txt", "tok.txt", "kor.txt", "pek.txt"]
-stopWordsDirectory = directory + "stopwords.txt"
+
+stopWordsDirectory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/stopwords/stopwords.txt"
 wordCount_before = [0, 0, 0, 0, 0, 0, 0]
 wordCount_after = [0, 0, 0, 0, 0, 0, 0]
 
@@ -576,7 +578,7 @@ plt.show()
 
 print("+VE/-VE WORDS ANALYSIS:")
 
-directory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/textfiles/"
+directory = "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/cities_articles/"
 filesArr = ["jak.txt", "bkk.txt", "hkg.txt",
             "tpe.txt", "tok.txt", "kor.txt", "pek.txt"]
 
@@ -1206,15 +1208,15 @@ distList = list()
 tempArr = list()
 
 file2 = open(
-    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/textfiles/POSSIBLE ROUTES (COMBINED)/routes.txt", "r+", encoding="utf8")  # original
+    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/possible_routes/routes.txt", "r+", encoding="utf8")  # original
 
 # sorted sentiment
 file3 = open(
-    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/textfiles/POSSIBLE ROUTES (COMBINED)/sentSorted.txt", "r+", encoding="utf8")
+    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/possible_routes/sentSorted.txt", "r+", encoding="utf8")
 
 # sorted distance
 file4 = open(
-    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP ASSIGNMENT/QUESTION 2/textfiles/POSSIBLE ROUTES (COMBINED)/distSorted.txt", "r+", encoding="utf8")
+    "/Users/muhdrahiman/Desktop/SE 18:19/S4/[WIA2005] (ALGORITHM DESIGN AND ANALYSIS)/GROUP PROJECT/PROJECT DESCRIPTION 2/textfiles/possible_routes/distSorted.txt", "r+", encoding="utf8")
 
 # To clear existing contents in the text file
 file2.truncate(0)
